@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/widget_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="To-Do List"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A" />
+
+        <TextView
+            android:id="@+id/widget_active_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="#E0F2FE"
+            android:text="3 Aktif"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#0284C7" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#E2E8F0" />
+
+    <TextView
+        android:id="@+id/widget_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Tidak ada tugas aktif"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/widget_task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ketuk untuk membuka aplikasi"
+        android:textSize="11sp"
+        android:textColor="#64748B" />
+
+</LinearLayout>
